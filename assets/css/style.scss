@@ -1,0 +1,93 @@
+$purple: #7b22d7;
+$white: #f3f3fc;
+$black: #141c14;
+
+body {
+  background-color: $white;
+  color: $black;
+  font-family: "Google Sans";
+}
+.nav-color {
+  background-color: $purple;
+}
+.brand-logo {
+  margin-left: 1rem;
+}
+.section {
+  height: 90vh;
+}
+#home {
+  h1 {
+    margin-top: 20%;
+  }
+  .btn {
+    height: 3rem;
+    width: 12rem;
+    line-height: 3.4;
+
+    &:hover {
+      background-color: $purple !important;
+      color: $white !important;
+    }
+  }
+}
+#dropdown1 {
+  a {
+    color: $black !important;
+  }
+}
+.btn {
+  background-color: #fff !important;
+  color: $purple !important;
+  text-transform: none;
+  border-radius: 5px;
+  font-weight: 600;
+}
+.modal-btn {
+  margin-top: 1.8rem;
+}
+.rounded {
+  border-radius: 15px;
+}
+.card-panel {
+  background-color: #fff;
+  color: $purple;
+
+  &:hover {
+    background-color: $purple;
+    color: #fff;
+  }
+}
+.project-card {
+  color: $black;
+
+  &:hover {
+    background-color: $white;
+    color: $purple;
+  }
+  h5 {
+    margin-top: 0;
+  }
+}
+.modal-auth {
+  max-width: 20% !important;
+  max-height: 50% !important;
+  border-radius: 15px;
+}
+#avatar {
+  max-height: 40px;
+  max-width: 40px;
+  margin-right: 1rem;
+  margin-top: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    margin-top: 0;
+  }
+  .modal-auth {
+    max-width: 60% !important;
+    max-height: 100% !important;
+    border-radius: 5px;
+  }
+}
