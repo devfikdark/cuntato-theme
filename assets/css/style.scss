@@ -1,20 +1,69 @@
-$green: #3e6328;
-$white-green: #f5f5f5;
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+$green: #045c0c;
+$white-green: #f3f3f3;
 $black: #141c14;
-
+$purple: #7b22d6;
 body {
   background-color: $white-green;
   color: $black;
+  font-family: "Roboto";
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Google Sans";
+  color: $green;
 }
-.nav-color {
-  background-color: $green;
-}
-.brand-logo {
-  margin-left: 1rem;
+nav {
+  height: 3.5rem;
+  padding: 0;
+  top: 0;
+  margin: 0;
+
+  .btn {
+    margin: 0.5rem 1rem;
+  }
+  #avatar {
+    max-height: 40px;
+    max-width: 40px;
+    margin: 0.5rem 1rem;
+  }
+
+  .brand-logo {
+    margin: -0.5rem 1rem;
+    font-family: "Righteous", cursive;
+    color: $green;
+  }
 }
 .section {
   height: 90vh;
+}
+.dropdown-content {
+  border-radius: 5px;
+}
+.small-div {
+  position: absolute;
+  width: 100vw;
+  height: 25vh;
+  margin: 0 auto;
+  top: 0;
+  background-color: $green;
+  z-index: -1;
+}
+.s1 {
+  position: absolute;
+  height: 90%;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: $green;
+  z-index: -1;
 }
 #home {
   h1 {
@@ -39,27 +88,42 @@ body {
 .btn {
   background-color: #fff !important;
   color: $green !important;
+  font-family: "Google Sans";
   text-transform: none;
   border-radius: 5px;
   font-weight: 600;
+
+  img {
+    vertical-align: middle;
+  }
 }
+.custom-btn {
+  height: 4rem;
+  width: 16rem;
+  font-size: 1.5rem;
+  line-height: 2.5;
+  border-radius: 10px;
+}
+
 .modal-btn {
   margin-top: 1.8rem;
+}
+.google-img {
+  padding: 10px;
 }
 .modal {
   width: 40%;
   height: 20%;
 }
 .rounded {
-  border-radius: 15px;
+  border-radius: 10px;
 }
 .card-panel {
   background-color: #fff;
   color: $green;
 
   &:hover {
-    background-color: $green;
-    color: #fff;
+    background-color: $white-green;
   }
 }
 .project-card {
@@ -83,12 +147,6 @@ body {
 //   max-height: 50% !important;
 //   border-radius: 15px;
 // }
-#avatar {
-  max-height: 40px;
-  max-width: 40px;
-  margin-right: 1rem;
-  margin-top: 1rem;
-}
 
 @media only screen and (max-width: 600px) {
   h1 {
@@ -98,5 +156,12 @@ body {
     width: 100%;
     height: 30%;
     border-radius: 5px;
+  }
+  .custom-btn {
+    height: 3rem;
+    width: 12rem;
+    font-size: 1.125rem;
+    line-height: 2.5;
+    border-radius: 10px;
   }
 }
