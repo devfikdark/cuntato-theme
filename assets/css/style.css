@@ -50,7 +50,7 @@ nav .brand-logo {
 .small-div {
   position: absolute;
   width: 100vw;
-  height: 25vh;
+  height: 28vh;
   margin: 0 auto;
   top: 0;
   background-color: #045c0c;
@@ -152,6 +152,31 @@ nav .brand-logo {
   font-size: 2.5em;
 }
 
+.pagination > li > a {
+  background-color: white;
+  color: #045c0c;
+}
+
+.pagination > li > a:focus,
+.pagination > li > a:hover,
+.pagination > li > span:focus,
+.pagination > li > span:hover {
+  color: #045c0c;
+  background-color: #eee;
+  border-color: #ddd;
+}
+
+.pagination > .active > a {
+  color: white;
+  background-color: #045c0c !important;
+  border: solid 1px #045c0c !important;
+}
+
+.pagination > .active > a:hover {
+  background-color: #f3f3f3 !important;
+  border: solid 1px #045c0c;
+}
+
 @media only screen and (max-width: 600px) {
   h1 {
     margin-top: 0;
@@ -167,6 +192,15 @@ nav .brand-logo {
     font-size: 1.125rem;
     line-height: 2.5;
     border-radius: 10px;
+  }
+  .small-div {
+    position: absolute;
+    width: 100vw;
+    height: 30vh;
+    margin: 0 auto;
+    top: 0;
+    background-color: #045c0c;
+    z-index: -1;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -48,7 +48,7 @@ nav {
 .small-div {
   position: absolute;
   width: 100vw;
-  height: 25vh;
+  height: 28vh;
   margin: 0 auto;
   top: 0;
   background-color: $green;
@@ -85,6 +85,7 @@ nav {
     color: $black !important;
   }
 }
+
 .btn {
   background-color: #fff !important;
   color: $green !important;
@@ -97,6 +98,7 @@ nav {
     vertical-align: middle;
   }
 }
+
 .custom-btn {
   height: 4rem;
   width: 16rem;
@@ -142,11 +144,31 @@ nav {
   font-size: 2.5em;
 }
 
-// .modal-auth {
-//   max-width: 20% !important;
-//   max-height: 50% !important;
-//   border-radius: 15px;
-// }
+.pagination > li > a {
+  background-color: white;
+
+  color: $green;
+}
+
+.pagination > li > a:focus,
+.pagination > li > a:hover,
+.pagination > li > span:focus,
+.pagination > li > span:hover {
+  color: $green;
+  background-color: #eee;
+  border-color: #ddd;
+}
+
+.pagination > .active > a {
+  color: white;
+  background-color: $green !important;
+  border: solid 1px $green !important;
+}
+
+.pagination > .active > a:hover {
+  background-color: $white-green !important;
+  border: solid 1px $green;
+}
 
 @media only screen and (max-width: 600px) {
   h1 {
@@ -163,5 +185,14 @@ nav {
     font-size: 1.125rem;
     line-height: 2.5;
     border-radius: 10px;
+  }
+  .small-div {
+    position: absolute;
+    width: 100vw;
+    height: 30vh;
+    margin: 0 auto;
+    top: 0;
+    background-color: $green;
+    z-index: -1;
   }
 }
