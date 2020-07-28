@@ -74,7 +74,30 @@
                   code
                 </div>
                 <div class="collapsible-body">
-                  <span>Lorem ipsum dolor sit amet.</span>
+                  <div class="row">
+                    <div class="col s12 m6 l6">
+                      <code>
+                        $("#copy-btn").click(function () { var copyText =
+                        document.getElementById("project-credential"); var
+                        textArea = document.createElement("textarea");
+                        textArea.value = copyText.textContent;
+                        document.body.appendChild(textArea); textArea.select();
+                        document.execCommand("Copy"); textArea.remove();
+                        showMessage("Code copied to clipboard"); });
+                      </code>
+                    </div>
+                    <div class="col s12 m6 l6">
+                      <code>
+                        $("#copy-btn").click(function () { var copyText =
+                        document.getElementById("project-credential"); var
+                        textArea = document.createElement("textarea");
+                        textArea.value = copyText.textContent;
+                        document.body.appendChild(textArea); textArea.select();
+                        document.execCommand("Copy"); textArea.remove();
+                        showMessage("Code copied to clipboard"); });
+                      </code>
+                    </div>
+                  </div>
                 </div>
               </li>
             </ul>
