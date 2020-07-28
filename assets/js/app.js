@@ -1,5 +1,6 @@
 $(function () {
   $(".modal").modal();
+  $(".collapsible").collapsible();
   $(".dropdown-trigger").dropdown({
     coverTrigger: false,
     constrainWidth: false,
