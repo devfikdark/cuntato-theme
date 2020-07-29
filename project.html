@@ -52,14 +52,18 @@
     </header>
 
     <main>
-      <div class="small-div"></div>
-      <div class="left-align">
-        <a href="profile.html" class="btn-flat white-text"
-          ><i class="material-icons left">arrow_back</i>Go back</a
+      <div class="fixed-action-btn">
+        <a
+          href="#question"
+          class="btn-floating modal-trigger btn-large blue darken-4 pulse"
         >
+          <i class="large material-icons">help</i>
+        </a>
       </div>
+      <div class="small-div"></div>
+
       <div class="center-align white-text">
-        <span>project Name</span>
+        <span>Project name</span>
         <h3 class="white-text">TeamTigers</h3>
       </div>
       <br />
@@ -70,24 +74,19 @@
             <ul class="collapsible rounded">
               <li>
                 <div class="collapsible-header rounded">
-                  <i class="material-icons">filter_drama</i>Your project related
+                  <i class="material-icons">expand_more</i>Your project related
                   code
                 </div>
                 <div class="collapsible-body">
+                  <div class="center-align">
+                    <a href="" class="btn btn-small"
+                      ><i class="material-icons right">content_copy</i>Copy
+                      code</a
+                    >
+                  </div>
                   <div class="row">
-                    <div class="col s12 m6 l6">
-                      <code>
-                        $("#copy-btn").click(function () { var copyText =
-                        document.getElementById("project-credential"); var
-                        textArea = document.createElement("textarea");
-                        textArea.value = copyText.textContent;
-                        document.body.appendChild(textArea); textArea.select();
-                        document.execCommand("Copy"); textArea.remove();
-                        showMessage("Code copied to clipboard"); });
-                      </code>
-                    </div>
-                    <div class="col s12 m6 l6">
-                      <code>
+                    <div class="col s12">
+                      <code class="code">
                         $("#copy-btn").click(function () { var copyText =
                         document.getElementById("project-credential"); var
                         textArea = document.createElement("textarea");
@@ -179,7 +178,23 @@
           </div>
         </div>
       </div>
+
+      <div id="question" class="modal">
+        <div class="modal-content">
+          <h4 class="center">How to setup</h4>
+          <p>
+            To get the functionality done you need to setup your personal site.
+            Right now we don't provide more than <b>3</b> input fields e.g.
+            Name, Email, Message. You need to give proper id to each input
+            field. You'll need jQuery to connect with the server. Copy the code
+            provided by us from the collapsible element and paste it in your
+            script tag. In name, email, and message field please set the id name
+            you used in your form.
+          </p>
+        </div>
+      </div>
     </main>
+    <img src="assets/img/blob.svg" alt="blob" class="blob" />
 
     <!-- jQuery cdn -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

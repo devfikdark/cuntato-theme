@@ -93,6 +93,7 @@ nav {
   font-family: "Google Sans";
   text-transform: none;
   border-radius: 5px;
+  border: 1px solid $green;
 }
 
 .auth-btn {
@@ -113,11 +114,17 @@ nav {
 }
 
 .custom-btn {
+  background-color: $green !important;
+  color: #fff !important;
   height: 4rem;
   width: 16rem;
   font-size: 1.5rem;
   line-height: 2.5;
-  border-radius: 10px;
+
+  &:hover {
+    background-color: #fff !important;
+    color: $green !important;
+  }
 }
 
 // .modal {
@@ -187,6 +194,15 @@ nav {
   border: solid 1px $green;
 }
 
+.blob {
+  height: 270px;
+  width: 270px;
+  position: absolute;
+  right: 1%;
+  top: 2%;
+  z-index: -1;
+}
+
 @media only screen and (max-width: 600px) {
   h1 {
     margin-top: 0;
@@ -218,5 +234,8 @@ nav {
   .auth-btn {
     height: 3rem;
     width: 100%;
+  }
+  .blob {
+    display: none;
   }
 }
