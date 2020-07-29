@@ -155,6 +155,10 @@ nav .brand-logo {
   text-decoration: underline;
 }
 
+.condition li {
+  color: red;
+}
+
 .add-icon {
   font-size: 2.5em;
 }

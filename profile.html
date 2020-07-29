@@ -109,8 +109,9 @@
       <div id="add-project" class="modal rounded">
         <div class="modal-content">
           <div class="row">
-            <div class="input-field col s6">
+            <div class="input-field col s12">
               <input
+                placeholder="eg. personal-site"
                 id="first_name"
                 type="text"
                 class="validate"
@@ -118,22 +119,36 @@
               />
               <label for="first_name">Project Name</label>
             </div>
-            <div class="col s6">
-              <a href="" class="btn modal-btn">Create</a>
+            <div class="input-field col s12">
+              <input
+                placeholder="eg. http://abc.herokuapp.com/"
+                id="first_name"
+                type="text"
+                class="validate"
+                autocomplete="off"
+              />
+              <label for="first_name">Domain name</label>
             </div>
           </div>
           <div class="row">
-            <ul>
-              <li>* Your project name must be unique.</li>
-              <li>
-                * After creating project you'll be given a project credential
-              </li>
-              <li>
-                * You can't make more than three project in free service. If you
-                want to add more than three project you need to get the premium
-                plan.
-              </li>
-            </ul>
+            <div class="col s12">
+              <a href="" class="btn modal-btn auth-btn center"> Create</a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s12">
+              <ul class="condition">
+                <li>* Your project name must be unique.</li>
+                <li>
+                  * After creating project you'll be given a project credential
+                </li>
+                <li>
+                  * You can't make more than three project in free service. If
+                  you want to add more than three project you need to get the
+                  premium plan.
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
