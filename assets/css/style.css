@@ -204,6 +204,17 @@ nav .brand-logo {
   z-index: -1;
 }
 
+.vr {
+  border-left: 1px solid #bbb8b8;
+  height: 25rem;
+  position: absolute;
+  right: 50.7%;
+}
+
+code {
+  background-color: #c5c5c4;
+}
+
 @media only screen and (max-width: 600px) {
   h1 {
     margin-top: 0;

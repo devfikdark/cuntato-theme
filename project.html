@@ -27,7 +27,7 @@
       <div class="navbar-fixed">
         <nav class="white z-depth-0">
           <div class="nav-wrapper">
-            <a href="#" class="brand-logo hide-on-small-only">Contato</a>
+            <a href="index.html" class="brand-logo">Contato</a>
             <ul id="nav-mobile" class="right">
               <li>
                 <img
@@ -78,15 +78,16 @@
                   code
                 </div>
                 <div class="collapsible-body">
-                  <div class="center-align">
+                  <!-- <div class="center-align">
                     <a href="" class="btn btn-small"
                       ><i class="material-icons right">content_copy</i>Copy
                       code</a
                     >
-                  </div>
+                  </div> -->
                   <div class="row">
-                    <div class="col s12">
-                      <code class="code">
+                    <div class="col s12 m12 l6">
+                      <h5>HTML</h5>
+                      <code id="html">
                         $("#copy-btn").click(function () { var copyText =
                         document.getElementById("project-credential"); var
                         textArea = document.createElement("textarea");
@@ -94,6 +95,25 @@
                         document.body.appendChild(textArea); textArea.select();
                         document.execCommand("Copy"); textArea.remove();
                         showMessage("Code copied to clipboard"); });
+                      </code>
+                    </div>
+                    <div class="col s12 m12 l6">
+                      <div class="vr hide-on-med-and-down"></div>
+                      <h5>Script</h5>
+                      <code id="jquery">
+                        $(function () { let url =
+                        "https://cuntato.herokuapp.com/api/project-data"; let
+                        data = { name: "sdjlkfj com", email:
+                        "datacom@gmail.com", message: "Hello, I have reached you
+                        through your personal website. Can you please help me to
+                        make a project? I'll give you $100. please let me know
+                        what do you think.", }; data = JSON.stringify(data); let
+                        projectID = "ghe05u8xkh"; let currentURL =
+                        window.location.href; // like this
+                        http://localhost:5500/test.html" $.post( url, { data,
+                        projectID: projectID, currentURL: currentURL }, function
+                        () {} ) .done((res) => { console.log(res); }) .fail(()
+                        => { console.log("somthing wrong"); }); });
                       </code>
                     </div>
                   </div>
