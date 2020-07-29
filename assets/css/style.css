@@ -89,6 +89,10 @@ nav .brand-logo {
   color: #141c14 !important;
 }
 
+.banner-text {
+  margin-top: 4em;
+}
+
 .btn {
   background-color: #fff !important;
   color: #045c0c !important;
@@ -244,6 +248,9 @@ code {
   }
   .blob {
     display: none;
+  }
+  .banner-text {
+    margin-top: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -87,6 +87,10 @@ nav {
   }
 }
 
+.banner-text {
+  margin-top: 4em;
+}
+
 .btn {
   background-color: #fff !important;
   color: $green !important;
@@ -245,5 +249,8 @@ code {
   }
   .blob {
     display: none;
+  }
+  .banner-text {
+    margin-top: 0;
   }
 }
