@@ -219,6 +219,10 @@ code {
   background-color: #c5c5c4;
 }
 
+.page-footer {
+  background-color: #141c14;
+}
+
 @media only screen and (max-width: 600px) {
   h1 {
     margin-top: 0;
