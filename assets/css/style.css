@@ -4,6 +4,20 @@ body {
   background-color: #f3f3f3;
   color: #141c14;
   font-family: "Roboto";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
 }
 
 h1,
@@ -98,7 +112,7 @@ nav .brand-logo {
   color: #045c0c !important;
   font-family: "Google Sans";
   text-transform: none;
-  border-radius: 5px;
+  border-radius: 10px;
   border: 1px solid #045c0c;
 }
 

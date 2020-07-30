@@ -4,10 +4,17 @@ $green: #045c0c;
 $white-green: #f3f3f3;
 $black: #141c14;
 $purple: #7b22d6;
+
 body {
   background-color: $white-green;
   color: $black;
   font-family: "Roboto";
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+main {
+  flex: 1 0 auto;
 }
 h1,
 h2,
@@ -96,7 +103,7 @@ nav {
   color: $green !important;
   font-family: "Google Sans";
   text-transform: none;
-  border-radius: 5px;
+  border-radius: 10px;
   border: 1px solid $green;
 }
 
