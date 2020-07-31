@@ -72,7 +72,7 @@ nav .brand-logo {
 .small-div {
   position: absolute;
   width: 100vw;
-  height: 30vh;
+  height: 28vh;
   margin: 0 auto;
   top: 0;
   background-color: #045c0c;
@@ -161,6 +161,7 @@ nav .brand-logo {
 }
 
 .tabs {
+  margin-top: 1.5em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -274,6 +275,21 @@ nav .brand-logo {
   z-index: -1;
 }
 
+.domain-name-changed-btn {
+  margin-top: 2rem;
+}
+
+.domain-name-changed-btn .domain-not-change {
+  background-color: transparent !important;
+  color: #fc2424 !important;
+  margin-left: 0.5rem;
+  border: none;
+}
+
+.domain-name-changed-btn .domain-not-change:hover {
+  background-color: #fc242417 !important;
+}
+
 #profile .card {
   background: #44a08d;
   /* fallback for old browsers */
@@ -298,6 +314,15 @@ nav .brand-logo {
   color: #fff;
 }
 
+.modal {
+  border-radius: 10px;
+}
+
+.no-msg-img {
+  width: 500px;
+  height: auto;
+}
+
 code {
   background-color: #c5c5c4;
 }
@@ -320,7 +345,7 @@ code {
   .small-div {
     position: absolute;
     width: 100vw;
-    height: 35vh;
+    height: 32vh;
     margin: 0 auto;
     top: 0;
     background-color: #045c0c;

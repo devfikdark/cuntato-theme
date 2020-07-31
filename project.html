@@ -41,6 +41,7 @@
             </ul>
             <ul id="dropdown1" class="dropdown-content">
               <li><a href="profile.html">Zubayer Himel</a></li>
+              <li><a href="dashboard.html">Dashboard</a></li>
               <li class="divider" tabindex="-1"></li>
               <li>
                 <a href="index.html">Sign Out</a>
@@ -66,7 +67,7 @@
         <span>Project name</span>
         <h3 class="white-text">TeamTigers</h3>
       </div>
-      <br />
+
       <div class="container">
         <div class="row">
           <div class="col s12">
@@ -83,12 +84,14 @@
               <div class="input-field col s6">
                 <input
                   placeholder="e.g. https://abc.herokuapp.com"
-                  id="first_name"
+                  autocomplete="off"
+                  id="domain"
                   type="text"
                   class="validate"
+                  validate
                 />
-                <label for="first_name">Domain name</label>
-                <a href="#" class="btn">Edit domain</a>
+                <label for="domain">Domain name</label>
+                <a href="#check" class="btn modal-trigger">Edit domain</a>
               </div>
             </div>
             <div class="row">
@@ -143,6 +146,7 @@
           </div>
 
           <div class="col s12" id="message">
+            <!-- IF MESSAGE FOUND THEN RENDER BELOW SECTION -->
             <div class="card rounded">
               <div class="card-content">
                 <div class="right">
@@ -216,6 +220,16 @@
                 </div>
               </div>
             </div>
+
+            <!-- IF MESSAGE NOT FOUND THEN RENDER BELOW SECTION -->
+            <div class="center-align">
+              <img
+                src="assets/img/svg/empty.svg"
+                alt="empty"
+                class="responsive-img no-msg-img"
+              />
+              <h3>No one has written yet!</h3>
+            </div>
           </div>
         </div>
       </div>
@@ -232,6 +246,18 @@
             script tag. In name, email, and message field please set the id name
             you used in your form.
           </p>
+        </div>
+      </div>
+
+      <div id="check" class="modal">
+        <div class="modal-content center-align">
+          <h4 class="red-text text-lighten-1">
+            Your domain name will be changed. Are you sure?
+          </h4>
+          <div class="domain-name-changed-btn">
+            <a href="" class="btn domain-change">Yes, change</a>
+            <a href="" class="btn domain-not-change">Cancel</a>
+          </div>
         </div>
       </div>
     </main>
