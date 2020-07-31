@@ -32,8 +32,15 @@ nav {
   margin: 0;
 
   .btn {
+    background-color: #fff !important;
+    color: $green !important;
     margin: 0.5rem 1rem;
     font-weight: 600;
+    border: none;
+
+    &:hover {
+      background-color: #045c0b21 !important;
+    }
   }
   #avatar {
     max-height: 40px;
@@ -99,11 +106,11 @@ nav {
 }
 
 .btn {
-  background-color: #fff !important;
-  color: $green !important;
+  background-color: $green !important;
+  color: #fff !important;
   font-family: "Google Sans";
   text-transform: none;
-  border-radius: 10px;
+  border-radius: 5px;
   border: 1px solid $green;
 }
 
@@ -111,6 +118,7 @@ nav {
   height: 3rem;
   width: 40%;
   line-height: 3;
+  background-color: #fff !important;
   color: $black !important;
   border: 1px solid $black;
 
@@ -131,11 +139,52 @@ nav {
   width: 16rem;
   font-size: 1.5rem;
   line-height: 2.5;
+  border-radius: 10px;
 
   &:hover {
-    background-color: #fff !important;
-    color: $green !important;
+    background-color: #045c0bd0 !important;
   }
+}
+
+.project-banner {
+  margin-top: 2em;
+  margin-bottom: 4em;
+}
+
+.tabs {
+  // margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  padding-top: 5px;
+  background: transparent;
+}
+
+.tabs {
+  .tab {
+    a {
+      color: #045c0b75 !important;
+      background: transparent;
+      text-transform: none;
+    }
+  }
+  margin-bottom: 3em;
+}
+/*Black color to the text*/
+.tabs .tab a:hover {
+  background-color: transparent;
+  color: $green !important;
+}
+
+/*Text color on hover*/
+.tabs .tab a.active {
+  background-color: transparent !important;
+  color: $green !important;
+  font-weight: bold;
+}
+
+/*Background and text color when a tab is active*/
+.tabs .indicator {
+  background-color: $green !important;
 }
 
 // .modal {
@@ -213,12 +262,41 @@ nav {
   top: 2%;
   z-index: -1;
 }
-.vr {
-  border-left: 1px solid rgb(187, 184, 184);
-  height: 25rem;
-  position: absolute;
-  right: 50.7%;
+#profile {
+  .card {
+    background: #44a08d; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #093637,
+      #44a08d
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #093637,
+      #44a08d
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+  .profile-img {
+    width: 300px;
+    height: auto;
+  }
+  .profile-info {
+    padding: 2rem;
+
+    h4,
+    h5 {
+      font-family: "Google Sans";
+      color: #fff;
+    }
+  }
 }
+
+// .vr {
+//   border-left: 1px solid rgb(187, 184, 184);
+//   height: 25rem;
+//   position: absolute;
+//   right: 50.7%;
+// }
 code {
   background-color: #c5c5c4;
 }

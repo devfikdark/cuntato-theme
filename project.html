@@ -62,66 +62,87 @@
       </div>
       <div class="small-div"></div>
 
-      <div class="center-align white-text">
+      <div class="center-align white-text project-banner">
         <span>Project name</span>
         <h3 class="white-text">TeamTigers</h3>
       </div>
       <br />
       <div class="container">
-        <div class="col s12">
-          <div class="row">
-            <col class="s12" />
-            <ul class="collapsible rounded">
-              <li>
-                <div class="collapsible-header rounded">
-                  <i class="material-icons">expand_more</i>Your project related
-                  code
-                </div>
-                <div class="collapsible-body">
-                  <!-- <div class="center-align">
-                    <a href="" class="btn btn-small"
-                      ><i class="material-icons right">content_copy</i>Copy
-                      code</a
-                    >
-                  </div> -->
-                  <div class="row">
-                    <div class="col s12 m12 l6">
-                      <h5>HTML</h5>
-                      <code id="html">
-                        $("#copy-btn").click(function () { var copyText =
-                        document.getElementById("project-credential"); var
-                        textArea = document.createElement("textarea");
-                        textArea.value = copyText.textContent;
-                        document.body.appendChild(textArea); textArea.select();
-                        document.execCommand("Copy"); textArea.remove();
-                        showMessage("Code copied to clipboard"); });
-                      </code>
-                    </div>
-                    <div class="col s12 m12 l6">
-                      <div class="vr hide-on-med-and-down"></div>
-                      <h5>Script</h5>
-                      <code id="jquery">
-                        $(function () { let url =
-                        "https://cuntato.herokuapp.com/api/project-data"; let
-                        data = { name: "sdjlkfj com", email:
-                        "datacom@gmail.com", message: "Hello, I have reached you
-                        through your personal website. Can you please help me to
-                        make a project? I'll give you $100. please let me know
-                        what do you think.", }; data = JSON.stringify(data); let
-                        projectID = "ghe05u8xkh"; let currentURL =
-                        window.location.href; // like this
-                        http://localhost:5500/test.html" $.post( url, { data,
-                        projectID: projectID, currentURL: currentURL }, function
-                        () {} ) .done((res) => { console.log(res); }) .fail(()
-                        => { console.log("somthing wrong"); }); });
-                      </code>
-                    </div>
-                  </div>
-                </div>
+        <div class="row">
+          <div class="col s12">
+            <ul class="tabs">
+              <li class="tab"><a href="#setup">Setup</a></li>
+              <li class="tab">
+                <a class="active" href="#message">Message</a>
               </li>
             </ul>
           </div>
-          <div class="row">
+
+          <div class="col s12" id="setup">
+            <div class="row">
+              <div class="input-field col s6">
+                <input
+                  placeholder="e.g. https://abc.herokuapp.com"
+                  id="first_name"
+                  type="text"
+                  class="validate"
+                />
+                <label for="first_name">Domain name</label>
+                <a href="#" class="btn">Edit domain</a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col s12">
+                <ul class="collapsible rounded">
+                  <li class="active">
+                    <div class="collapsible-header rounded">
+                      <i class="material-icons">expand_more</i>Your project
+                      related code
+                    </div>
+                    <div class="collapsible-body">
+                      <div class="row">
+                        <div class="col s12">
+                          <h5>HTML</h5>
+                          <code id="html">
+                            $("#copy-btn").click(function () { var copyText =
+                            document.getElementById("project-credential"); var
+                            textArea = document.createElement("textarea");
+                            textArea.value = copyText.textContent;
+                            document.body.appendChild(textArea);
+                            textArea.select(); document.execCommand("Copy");
+                            textArea.remove(); showMessage("Code copied to
+                            clipboard"); });
+                          </code>
+                        </div>
+                        <div class="col s12">
+                          <!-- <div class="vr hide-on-med-and-down"></div> -->
+                          <h5>Script</h5>
+                          <code id="jquery">
+                            $(function () { let url =
+                            "https://cuntato.herokuapp.com/api/project-data";
+                            let data = { name: "sdjlkfj com", email:
+                            "datacom@gmail.com", message: "Hello, I have reached
+                            you through your personal website. Can you please
+                            help me to make a project? I'll give you $100.
+                            please let me know what do you think.", }; data =
+                            JSON.stringify(data); let projectID = "ghe05u8xkh";
+                            let currentURL = window.location.href; // like this
+                            http://localhost:5500/test.html" $.post( url, {
+                            data, projectID: projectID, currentURL: currentURL
+                            }, function () {} ) .done((res) => {
+                            console.log(res); }) .fail(() => {
+                            console.log("somthing wrong"); }); });
+                          </code>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12" id="message">
             <div class="card rounded">
               <div class="card-content">
                 <div class="right">

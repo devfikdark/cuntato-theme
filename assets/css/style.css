@@ -38,8 +38,15 @@ nav {
 }
 
 nav .btn {
+  background-color: #fff !important;
+  color: #045c0c !important;
   margin: 0.5rem 1rem;
   font-weight: 600;
+  border: none;
+}
+
+nav .btn:hover {
+  background-color: #045c0b21 !important;
 }
 
 nav #avatar {
@@ -108,11 +115,11 @@ nav .brand-logo {
 }
 
 .btn {
-  background-color: #fff !important;
-  color: #045c0c !important;
+  background-color: #045c0c !important;
+  color: #fff !important;
   font-family: "Google Sans";
   text-transform: none;
-  border-radius: 10px;
+  border-radius: 5px;
   border: 1px solid #045c0c;
 }
 
@@ -120,6 +127,7 @@ nav .brand-logo {
   height: 3rem;
   width: 40%;
   line-height: 3;
+  background-color: #fff !important;
   color: #141c14 !important;
   border: 1px solid #141c14;
 }
@@ -140,11 +148,55 @@ nav .brand-logo {
   width: 16rem;
   font-size: 1.5rem;
   line-height: 2.5;
+  border-radius: 10px;
 }
 
 .custom-btn:hover {
-  background-color: #fff !important;
+  background-color: #045c0bd0 !important;
+}
+
+.project-banner {
+  margin-top: 2em;
+  margin-bottom: 4em;
+}
+
+.tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 5px;
+  background: transparent;
+}
+
+.tabs {
+  margin-bottom: 3em;
+}
+
+.tabs .tab a {
+  color: #045c0b75 !important;
+  background: transparent;
+  text-transform: none;
+}
+
+/*Black color to the text*/
+.tabs .tab a:hover {
+  background-color: transparent;
   color: #045c0c !important;
+}
+
+/*Text color on hover*/
+.tabs .tab a.active {
+  background-color: transparent !important;
+  color: #045c0c !important;
+  font-weight: bold;
+}
+
+/*Background and text color when a tab is active*/
+.tabs .indicator {
+  background-color: #045c0c !important;
 }
 
 .rounded {
@@ -222,11 +274,28 @@ nav .brand-logo {
   z-index: -1;
 }
 
-.vr {
-  border-left: 1px solid #bbb8b8;
-  height: 25rem;
-  position: absolute;
-  right: 50.7%;
+#profile .card {
+  background: #44a08d;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#093637), to(#44a08d));
+  background: linear-gradient(to right, #093637, #44a08d);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#profile .profile-img {
+  width: 300px;
+  height: auto;
+}
+
+#profile .profile-info {
+  padding: 2rem;
+}
+
+#profile .profile-info h4,
+#profile .profile-info h5 {
+  font-family: "Google Sans";
+  color: #fff;
 }
 
 code {
