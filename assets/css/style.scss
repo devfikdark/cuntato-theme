@@ -142,7 +142,8 @@ nav {
   border-radius: 10px;
 
   &:hover {
-    background-color: #045c0bd0 !important;
+    background-color: #fff !important;
+    color: $green !important;
   }
 }
 
@@ -279,22 +280,12 @@ nav {
 }
 
 #profile {
-  .card {
-    background: #44a08d; /* fallback for old browsers */
-    background: -webkit-linear-gradient(
-      to right,
-      #093637,
-      #44a08d
-    ); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(
-      to right,
-      #093637,
-      #44a08d
-    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  }
   .profile-img {
     width: 300px;
     height: auto;
+    -webkit-box-shadow: -1px 3px 35px -16px rgba(4, 92, 12, 1);
+    -moz-box-shadow: -1px 3px 35px -16px rgba(4, 92, 12, 1);
+    box-shadow: -1px 3px 35px -16px rgba(4, 92, 12, 1);
   }
   .profile-info {
     padding: 2rem;
@@ -302,7 +293,7 @@ nav {
     h4,
     h5 {
       font-family: "Google Sans";
-      color: #fff;
+      color: $black;
     }
   }
 }

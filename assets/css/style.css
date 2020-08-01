@@ -152,7 +152,8 @@ nav .brand-logo {
 }
 
 .custom-btn:hover {
-  background-color: #045c0bd0 !important;
+  background-color: #fff !important;
+  color: #045c0c !important;
 }
 
 .project-banner {
@@ -290,18 +291,11 @@ nav .brand-logo {
   background-color: #fc242417 !important;
 }
 
-#profile .card {
-  background: #44a08d;
-  /* fallback for old browsers */
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-gradient(linear, left top, right top, from(#093637), to(#44a08d));
-  background: linear-gradient(to right, #093637, #44a08d);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
 #profile .profile-img {
   width: 300px;
   height: auto;
+  -webkit-box-shadow: -1px 3px 35px -16px #045c0c;
+  box-shadow: -1px 3px 35px -16px #045c0c;
 }
 
 #profile .profile-info {
@@ -311,7 +305,7 @@ nav .brand-logo {
 #profile .profile-info h4,
 #profile .profile-info h5 {
   font-family: "Google Sans";
-  color: #fff;
+  color: #141c14;
 }
 
 .modal {
