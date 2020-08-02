@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap");
 body {
   background-color: #f3f3f3;
   color: #141c14;
@@ -30,17 +31,10 @@ h6 {
   color: #045c0c;
 }
 
-nav {
-  height: 3.5rem;
-  padding: 0;
-  top: 0;
-  margin: 0;
-}
-
 nav .btn {
   background-color: #fff !important;
   color: #045c0c !important;
-  margin: 0.5rem 1rem;
+  margin: 1rem 1rem;
   font-weight: 600;
   border: none;
 }
@@ -52,11 +46,11 @@ nav .btn:hover {
 nav #avatar {
   max-height: 40px;
   max-width: 40px;
-  margin: 0.5rem 1rem;
+  margin: 1rem 1rem;
 }
 
 nav .brand-logo {
-  margin: -0.5rem 1rem;
+  margin: 0.1rem 1rem;
   font-family: "Righteous", cursive;
   color: #045c0c;
 }
@@ -108,6 +102,39 @@ nav .brand-logo {
 
 #dropdown1 a {
   color: #141c14 !important;
+}
+
+.progress {
+  margin: 0;
+}
+
+.circle-loader {
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 999;
+}
+
+.circle-loader .text {
+  font-size: 2em;
+  font-family: "PT Sans Narrow", sans-serif;
+  margin-top: 2rem;
+  color: grey;
 }
 
 .banner-text {
