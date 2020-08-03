@@ -164,44 +164,51 @@
       <!-- MODAL -->
       <div id="add-project" class="modal rounded">
         <div class="modal-content">
-          <div class="row">
-            <div class="input-field col s12">
-              <input
-                placeholder="eg. personal-site"
-                id="first_name"
-                type="text"
-                class="validate"
-                autocomplete="off"
-              />
-              <label for="first_name">Project Name</label>
+          <form action="" id="project-form">
+            <div class="row">
+              <div class="input-field col s12">
+                <input
+                  placeholder="eg. personal-site"
+                  id="project_name"
+                  type="text"
+                  class="validate"
+                  autocomplete="off"
+                  required
+                />
+                <label for="project_name">Project Name</label>
+              </div>
+              <div class="input-field col s12">
+                <input
+                  placeholder="eg. http://abc.herokuapp.com/"
+                  id="domain_name"
+                  type="text"
+                  class="validate"
+                  autocomplete="off"
+                  required
+                />
+                <label for="domain_name">Domain name</label>
+              </div>
             </div>
-            <div class="input-field col s12">
-              <input
-                placeholder="eg. http://abc.herokuapp.com/"
-                id="first_name"
-                type="text"
-                class="validate"
-                autocomplete="off"
-              />
-              <label for="first_name">Domain name</label>
+            <div class="row">
+              <div class="col s12">
+                <input
+                  type="submit"
+                  value="Create project"
+                  class="btn auth-btn center"
+                />
+              </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="col s12">
-              <a href="" class="btn modal-btn auth-btn center"> Create</a>
-            </div>
-          </div>
+          </form>
           <div class="row">
             <div class="col s12">
               <ul class="condition">
                 <li>* Your project name must be unique.</li>
                 <li>
-                  * After creating project you'll be given a project credential
+                  * After creating project you'll be given a project token.
                 </li>
                 <li>
-                  * You can't make more than three project in free service. If
-                  you want to add more than three project you need to get the
-                  premium plan.
+                  * You can't make more than three project right now.
+                  <a href="#" target="_blank">Learn more</a>
                 </li>
               </ul>
             </div>
