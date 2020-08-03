@@ -1,0 +1,275 @@
+/* .circular {
+  width: 50px;
+  height: 50px;
+  -webkit-animation: rotate 2s linear infinite;
+  animation: rotate 2s linear infinite;
+}
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.path {
+  stroke-dasharray: 1, 200;
+  stroke-dashoffset: 0;
+  -webkit-animation: dash 1.5s ease-in-out infinite,
+    color 6s ease-in-out infinite;
+  animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
+  stroke-linecap: round;
+  stroke: #db652d;
+}
+
+@-webkit-keyframes dash {
+  0% {
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -35;
+  }
+  100% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -124;
+  }
+}
+
+@keyframes dash {
+  0% {
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -35;
+  }
+  100% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -124;
+  }
+}
+
+@-webkit-keyframes color {
+  0% {
+    stroke: #db652d;
+  }
+  20% {
+    stroke: #db652d;
+  }
+  25% {
+    stroke: #db652d;
+  }
+  45% {
+    stroke: #db652d;
+  }
+  50% {
+    stroke: #db652d;
+  }
+  70% {
+    stroke: #db652d;
+  }
+  75% {
+    stroke: #db652d;
+  }
+  95% {
+    stroke: #db652d;
+  }
+}
+
+@keyframes color {
+  0% {
+    stroke: #3f88f8;
+  }
+  20% {
+    stroke: #3f88f8;
+  }
+  25% {
+    stroke: #dd413b;
+  }
+  45% {
+    stroke: #dd413b;
+  }
+  50% {
+    stroke: #f6ae2e;
+  }
+  70% {
+    stroke: #f6ae2e;
+  }
+  75% {
+    stroke: #259a5d;
+  }
+  95% {
+    stroke: #259a5d;
+  }
+} */
+
+/* .dots {
+  position: relative;
+  width: 65px;
+  height: 65px;
+}
+.dot {
+  width: 27px;
+  height: 27px;
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+}
+.blue {
+  top: 2px;
+  left: 2px;
+  background-color: #3284ff;
+  animation: blue 4s infinite;
+  color: blue;
+}
+.red {
+  top: 35px;
+  left: 2px;
+  background-color: #ff3424;
+  animation: red 4s infinite;
+  color: red;
+}
+
+.yellow {
+  top: 35px;
+  left: 35px;
+  background-color: #ffbb00;
+  animation: yellow 4s infinite;
+  color: yellow;
+}
+
+.green {
+  top: 2px;
+  left: 35px;
+  background-color: #26b14c;
+  animation: green 4s infinite;
+  color: green;
+}
+
+@keyframes blue {
+  25% {
+    top: 2px;
+    left: 35px;
+  }
+  50% {
+    top: 35px;
+    left: 35px;
+  }
+  75% {
+    top: 35px;
+    left: 2px;
+  }
+  100% {
+    top: 2px;
+    left: 2ps;
+  }
+}
+@keyframes yellow {
+  25% {
+    top: 35px;
+    left: 2px;
+  }
+  50% {
+    top: 2px;
+    left: 2px;
+  }
+  75% {
+    top: 2px;
+    left: 35px;
+  }
+  100% {
+    top: 35px;
+    left: 35ps;
+  }
+}
+@keyframes red {
+  25% {
+    top: 2px;
+    left: 2px;
+  }
+  50% {
+    top: 2px;
+    left: 35px;
+  }
+  75% {
+    top: 35px;
+    left: 35px;
+  }
+  100% {
+    top: 35px;
+    left: 2ps;
+  }
+}
+@keyframes green {
+  25% {
+    top: 35px;
+    left: 35px;
+  }
+  50% {
+    top: 35px;
+    left: 2px;
+  }
+  75% {
+    top: 2px;
+    left: 2px;
+  }
+  100% {
+    top: 2px;
+    left: 35px;
+  }
+} */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ball {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  float: left;
+  margin-left: 20px;
+  animation: move1 2s linear infinite;
+}
+
+.ball:nth-child(1) {
+  background: #4285f4;
+  animation-delay: 0s;
+}
+
+.ball:nth-child(2) {
+  background: #ea4335;
+  animation-delay: 0.25s;
+}
+
+.ball:nth-child(3) {
+  background: #fbbc05;
+  animation-delay: 0.5s;
+}
+
+.ball:nth-child(4) {
+  animation-delay: 0.75s;
+  background: #34a853;
+}
+
+@keyframes move1 {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-25px);
+  }
+}

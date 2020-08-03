@@ -21,6 +21,7 @@
       href="https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css"
     />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/loader.css" />
   </head>
   <body>
     <header>
@@ -55,56 +56,30 @@
     <!-- PRELOADER -->
 
     <div class="circle-loader">
-      <div class="preloader-wrapper big active">
-        <div class="spinner-layer spinner-blue">
-          <div class="circle-clipper left">
-            <div class="circle"></div>
-          </div>
-          <div class="gap-patch">
-            <div class="circle"></div>
-          </div>
-          <div class="circle-clipper right">
-            <div class="circle"></div>
-          </div>
-        </div>
-
-        <div class="spinner-layer spinner-red">
-          <div class="circle-clipper left">
-            <div class="circle"></div>
-          </div>
-          <div class="gap-patch">
-            <div class="circle"></div>
-          </div>
-          <div class="circle-clipper right">
-            <div class="circle"></div>
-          </div>
-        </div>
-
-        <div class="spinner-layer spinner-yellow">
-          <div class="circle-clipper left">
-            <div class="circle"></div>
-          </div>
-          <div class="gap-patch">
-            <div class="circle"></div>
-          </div>
-          <div class="circle-clipper right">
-            <div class="circle"></div>
-          </div>
-        </div>
-
-        <div class="spinner-layer spinner-green">
-          <div class="circle-clipper left">
-            <div class="circle"></div>
-          </div>
-          <div class="gap-patch">
-            <div class="circle"></div>
-          </div>
-          <div class="circle-clipper right">
-            <div class="circle"></div>
-          </div>
-        </div>
+      <!-- <svg class="circular" height="50" width="50">
+        <circle
+          class="path"
+          cx="25"
+          cy="25.2"
+          r="19.9"
+          fill="none"
+          stroke-width="6"
+          stroke-miterlimit="10"
+        />
+      </svg> -->
+      <!-- <div class="dots">
+        <div class="dot red"></div>
+        <div class="dot green"></div>
+        <div class="dot yellow"></div>
+        <div class="dot blue"></div>
+      </div> -->
+      <div class="container">
+        <div class="ball"></div>
+        <div class="ball"></div>
+        <div class="ball"></div>
+        <div class="ball"></div>
       </div>
-      <span class="text">Fetching data...</span>
+      <!-- <span class="text">Fetching data...</span> -->
     </div>
 
     <main class="main-content">
@@ -292,15 +267,33 @@
       <div id="question" class="modal">
         <div class="modal-content">
           <h4 class="center">How to setup</h4>
-          <p>
-            <ul>
-              <li class="red-text text-darken-2">* To setup your project go to setup tab.</li>
-              <li class="red-text text-darken-2">* In the domain field you'll see your provided domain name where you wanted to host your site. You can change domain name if you change your hosting site to another domain. Please keep in mind your provided domain name should be matched with the hosting domain.</li>
-              <li class="red-text text-darken-2">* You'll be provided demo <code>HTML</code> and <code>jQuery</code> code to get started. You can't have more than three fields in your contact form.</li>
-              <li class="red-text text-darken-2">* Place the <code>jQuery</code> code after jQuery CDN. You can change <b>name</b>, <b>email</b>, <b>message</b> field's id if you want. But make sure your input field's id match in <code>HTML</code> and <code>jQuery</code>.</li>
-              <li class="red-text text-darken-2">* In done() & fail() methods you can insert any toast or alert item if you want.</li>
-            </ul>
-          </p>
+          <ul>
+            <li class="red-text text-darken-2">
+              * To setup your project go to setup tab.
+            </li>
+            <li class="red-text text-darken-2">
+              * In the domain field you'll see your provided domain name where
+              you wanted to host your site. You can change domain name if you
+              change your hosting site to another domain. Please keep in mind
+              your provided domain name should be matched with the hosting
+              domain.
+            </li>
+            <li class="red-text text-darken-2">
+              * You'll be provided demo <code>HTML</code> and
+              <code>jQuery</code> code to get started. You can't have more than
+              three fields in your contact form.
+            </li>
+            <li class="red-text text-darken-2">
+              * Place the <code>jQuery</code> code after jQuery CDN. You can
+              change <b>name</b>, <b>email</b>, <b>message</b> field's id if you
+              want. But make sure your input field's id match in
+              <code>HTML</code> and <code>jQuery</code>.
+            </li>
+            <li class="red-text text-darken-2">
+              * In done() & fail() methods you can insert any toast or alert
+              item if you want.
+            </li>
+          </ul>
         </div>
       </div>
 
