@@ -179,14 +179,20 @@
               </div>
               <div class="input-field col s12">
                 <input
-                  placeholder="eg. http://abc.herokuapp.com/"
+                  placeholder="eg. https://abc.herokuapp.com/"
                   id="domain_name"
                   type="text"
                   class="validate"
+                  pattern="^(?:http(s)?:\/\/)?[\w.-]+(?:\.[\w\.-]+)+[\w\-\._~:/?#[\]@!\$&'\(\)\*\+,;=.]+$"
                   autocomplete="off"
                   required
                 />
                 <label for="domain_name">Domain name</label>
+                <span
+                  class="helper-text"
+                  data-error="Invalid url"
+                  data-success="Valid url"
+                ></span>
               </div>
             </div>
             <div class="row">
