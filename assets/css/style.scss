@@ -7,6 +7,10 @@ $white-green: #f3f3f3;
 $black: #141c14;
 $purple: #7b22d6;
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: $white-green;
   color: $black;
@@ -284,6 +288,18 @@ nav {
   top: 2%;
   z-index: -1;
 }
+#wave {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  transform: scaleY(-1);
+
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
 
 .domain-name-changed-btn {
   margin-top: 2rem;
@@ -325,6 +341,10 @@ nav {
 .no-msg-img {
   width: 500px;
   height: auto;
+}
+
+.copy-icon {
+  margin-top: 1rem;
 }
 
 // .vr {

@@ -16,10 +16,8 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Google+Sans"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css"
-    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
@@ -69,18 +67,32 @@
               />
             </div>
           </div>
+          <img
+            src="assets/img/svg/wave.svg"
+            alt="wave"
+            id="wave"
+            class="responsive-img"
+          />
         </div>
 
         <div class="section">
           <div class="row">
-            <div class="col s12 m12 l6">
+            <div
+              class="col s12 m12 l6"
+              data-aos="fade-right"
+              data-aos-duration="1500"
+            >
               <h3>Easy Authentication</h3>
               <p class="flow-text">
                 You don't need to create any account in our site. To get started
                 you need to authenticate via Google or Github or LinkedIn.
               </p>
             </div>
-            <div class="col s12 m12 l6">
+            <div
+              class="col s12 m12 l6"
+              data-aos="fade-left"
+              data-aos-duration="1500"
+            >
               <img
                 src="assets/img/svg/authenticationsvg.svg"
                 alt="authentication"
@@ -92,15 +104,23 @@
 
         <div class="section">
           <div class="row">
-            <div class="col s12 m12 l6">
+            <div
+              class="col s12 m12 l6"
+              data-aos="fade-right"
+              data-aos-duration="1500"
+            >
               <h3>Setup</h3>
               <p class="flow-text">
-                After authentication you'll be redirected to your profile page
-                where you will create a project for a single contact form.
-                You'll be given required credentials after creating the project.
+                After authentication you'll be redirected to your dashboard page
+                where you will create project for a single contact form. You'll
+                be given required credentials after creating the project.
               </p>
             </div>
-            <div class="col s12 m12 l6">
+            <div
+              class="col s12 m12 l6"
+              data-aos="fade-left"
+              data-aos-duration="1500"
+            >
               <img
                 src="assets/img/svg/setupsvg.svg"
                 alt="setup"
@@ -112,14 +132,22 @@
 
         <div class="section">
           <div class="row">
-            <div class="col s12 m12 l6">
+            <div
+              class="col s12 m12 l6"
+              data-aos="fade-right"
+              data-aos-duration="1500"
+            >
               <h3>Get messages</h3>
               <p class="flow-text">
                 Use the required credentials provided after creating project in
                 your site's script and BOOM!!! You are good to go.
               </p>
             </div>
-            <div class="col s12 m12 l6">
+            <div
+              class="col s12 m12 l6"
+              data-aos="fade-left"
+              data-aos-duration="1500"
+            >
               <img
                 src="assets/img/svg/setupsvg1.svg"
                 alt="done"
@@ -223,8 +251,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Materialize js cdn -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- Scroll animation js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Custom JS -->
     <script src="assets/js/app.js"></script>
-    <!-- <script src="assets/js/test.js"></script> -->
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
