@@ -70,7 +70,7 @@ nav .brand-logo {
 .small-div {
   position: absolute;
   width: 100vw;
-  height: 30vh;
+  height: 18em;
   margin: 0 auto;
   top: 0;
   background-color: #045c0c;
@@ -383,15 +383,6 @@ code {
     font-size: 1.125rem;
     line-height: 2.5;
     border-radius: 10px;
-  }
-  .small-div {
-    position: absolute;
-    width: 100vw;
-    height: 32vh;
-    margin: 0 auto;
-    top: 0;
-    background-color: #045c0c;
-    z-index: -1;
   }
   .project-btn {
     padding: 0;

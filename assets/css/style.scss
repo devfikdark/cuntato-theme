@@ -64,7 +64,7 @@ nav {
 .small-div {
   position: absolute;
   width: 100vw;
-  height: 30vh;
+  height: 18em;
   margin: 0 auto;
   top: 0;
   background-color: $green;
@@ -371,15 +371,7 @@ code {
     line-height: 2.5;
     border-radius: 10px;
   }
-  .small-div {
-    position: absolute;
-    width: 100vw;
-    height: 32vh;
-    margin: 0 auto;
-    top: 0;
-    background-color: $green;
-    z-index: -1;
-  }
+
   .project-btn {
     padding: 0;
   }
