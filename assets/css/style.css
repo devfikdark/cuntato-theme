@@ -365,6 +365,10 @@ nav .brand-logo {
   margin-top: 1rem;
 }
 
+#jquery {
+  cursor: copy;
+}
+
 code {
   background-color: #c5c5c4;
 }
