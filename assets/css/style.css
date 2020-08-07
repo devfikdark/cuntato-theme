@@ -35,10 +35,13 @@ h6 {
   color: #045c0c;
 }
 
+nav li {
+  margin-top: 1rem;
+}
+
 nav .btn {
   background-color: #fff !important;
   color: #045c0c !important;
-  margin: 1rem 1rem;
   font-weight: 600;
   border: none;
 }
@@ -142,7 +145,7 @@ nav .brand-logo {
 }
 
 .banner-text {
-  margin-top: 12vh;
+  margin-top: 8vh;
 }
 
 .btn {
@@ -399,7 +402,7 @@ code {
     display: none;
   }
   .banner-text {
-    margin-top: 0;
+    margin-top: 2em;
   }
 }
 /*# sourceMappingURL=style.css.map */

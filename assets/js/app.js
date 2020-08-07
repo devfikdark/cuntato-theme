@@ -2,6 +2,7 @@ $(function () {
   $(".modal").modal();
   $(".collapsible").collapsible();
   $(".tabs").tabs();
+  $(".sidenav").sidenav();
   $(".dropdown-trigger").dropdown({
     coverTrigger: false,
     constrainWidth: false,
